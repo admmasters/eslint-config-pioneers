@@ -1,0 +1,32 @@
+{
+  "name": "@admmasters/eslint-config-pioneers",
+  "version": "0.0.1",
+  "description": "An opinionated TypeScript ESLint config",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admmasters/eslint-config-pioneers.git"
+  },
+  "keywords": ["eslint", "config", "standard"],
+  "author": "Matt Revell",
+  "license": "SEE LICENSE IN THEUNLICENSE",
+  "bugs": {
+    "url": "https://github.com/admmasters/eslint-config-pioneers/issues"
+  },
+  "homepage": "https://github.com/admmasters/eslint-config-pioneers#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "peerDependencies": {
+    "eslint": ">= 7",
+    "@typescript-eslint/parser": "^3.5.0",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.17.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.5"
+  }
+}
