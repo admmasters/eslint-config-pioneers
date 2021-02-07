@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/admmasters/eslint-config-pioneers#readme",
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "devDependencies": {
+    "@changesets/cli": "^2.14.1"
+  },
   "peerDependencies": {
     "eslint": ">= 7",
     "@typescript-eslint/parser": "^3.5.0",
