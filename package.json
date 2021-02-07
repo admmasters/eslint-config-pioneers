@@ -27,8 +27,7 @@
   "homepage": "https://github.com/admmasters/eslint-config-pioneers#readme",
   "scripts": {
     "ci:version": "changeset version",
-    "release": "changeset publish",
-    "prepush": "changeset"
+    "ci:release": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.14.1"
