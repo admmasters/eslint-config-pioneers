@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "description": "An opinionated TypeScript ESLint config",
   "main": "index.js",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "index.js"
   ],
