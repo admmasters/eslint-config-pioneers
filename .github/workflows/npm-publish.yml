@@ -16,6 +16,8 @@ jobs:
           fetch-depth: 0
       - name: setup node.js
         uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14
       - name: install pnpm
         run: npm i pnpm@latest -g
       - name: setup pnpm config
