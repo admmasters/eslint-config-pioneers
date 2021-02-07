@@ -25,6 +25,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: install pnpm
         run: npm i pnpm@latest -g
+      - name: disable verify store
+        run: pnpm set verify-store-integrity false
       - name: setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: install dependencies
