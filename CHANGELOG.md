@@ -1,5 +1,11 @@
 # @admmasters/eslint-config-pioneers
 
+## 0.1.0
+
+### Minor Changes
+
+- 6cc6b4f: no-null eslint
+
 ## 0.0.4
 
 ### Patch Changes
