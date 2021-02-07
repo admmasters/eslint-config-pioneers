@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pioneers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An opinionated TypeScript ESLint config",
   "main": "index.js",
   "sideEffects": false,
