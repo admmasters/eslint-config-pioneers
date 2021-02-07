@@ -1,5 +1,5 @@
 {
-  "name": "@admmasters/eslint-config-pioneers",
+  "name": "eslint-config-pioneers",
   "version": "0.0.2",
   "description": "An opinionated TypeScript ESLint config",
   "main": "index.js",
