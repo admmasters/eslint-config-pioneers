@@ -25,7 +25,8 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "ci:version": "changeset version"
+    "ci:version": "changeset version",
+    "ci:release": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.14.1"
