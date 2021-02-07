@@ -1,6 +1,6 @@
 {
   "name": "@admmasters/eslint-config-pioneers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An opinionated TypeScript ESLint config",
   "main": "index.js",
   "files": [
@@ -10,14 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/admmasters/eslint-config-pioneers.git"
   },
-  "keywords": ["eslint", "config", "standard"],
+  "keywords": [
+    "eslint",
+    "config",
+    "standard"
+  ],
   "author": "Matt Revell",
   "license": "SEE LICENSE IN THEUNLICENSE",
   "bugs": {
     "url": "https://github.com/admmasters/eslint-config-pioneers/issues"
   },
   "homepage": "https://github.com/admmasters/eslint-config-pioneers#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "ci:version": "changeset version"
   },
