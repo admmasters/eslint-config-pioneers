@@ -30,7 +30,7 @@ jobs:
       - name: create versions
         uses: changesets/action@master
         with:
-          version: pnpm version
+          version: pnpm ci:version
           commit: 'chore: update versions'
           title: 'chore: update versions'
           publish: pnpm release
