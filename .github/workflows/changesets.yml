@@ -1,13 +1,11 @@
-name: Changeset
-
+name: Changesets
 on:
   push:
     branches:
-      - master
-
+      - main
 env:
   CI: true
-  PNPM_CACHE_FOLDER: ~/.pnpm-store
+  PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
   version:
     timeout-minutes: 15
@@ -18,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: setup node.js
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v2-beta
         with:
           node-version: 14
       - name: install pnpm
@@ -30,11 +28,8 @@ jobs:
       - name: create versions
         uses: changesets/action@master
         with:
-          version: npm run ci:version
+          version: pnpm ci:version
           commit: 'chore: update versions'
           title: 'chore: update versions'
-          publish: npm run ci:release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
