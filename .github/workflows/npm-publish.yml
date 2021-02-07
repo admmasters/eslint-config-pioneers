@@ -31,10 +31,8 @@ jobs:
           commit: 'chore: update versions'
           title: 'chore: update versions'
           publish: pnpm ci:release
-
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # TODO: update casing of the npm token
-          NPM_TOKEN: ${{ secrets.npm_token }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           PNPM_CACHE_FOLDER: .pnpm-store
