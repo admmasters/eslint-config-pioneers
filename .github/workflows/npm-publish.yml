@@ -7,7 +7,6 @@ on:
 
 env:
   CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
   version:
@@ -22,22 +21,15 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 12.x
-          registry-url: 'https://registry.npmjs.org'
-      - name: install pnpm
-        run: npm i pnpm@latest -g
-      - name: disable verify store
-        run: pnpm set verify-store-integrity false
-      - name: setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: install dependencies
-        run: pnpm install
+        run: yarn install
       - name: create versions
         uses: changesets/action@master
         with:
-          version: pnpm version
+          version: yarn version
           commit: 'chore: update versions'
           title: 'chore: update versions'
-          publish: pnpm release
+          publish: yarn release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
