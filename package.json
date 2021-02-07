@@ -21,9 +21,6 @@
     "url": "https://github.com/admmasters/eslint-config-pioneers/issues"
   },
   "homepage": "https://github.com/admmasters/eslint-config-pioneers#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
     "ci:version": "changeset version",
     "ci:release": "changeset publish"
