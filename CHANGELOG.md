@@ -1,5 +1,11 @@
 # @admmasters/eslint-config-pioneers
 
+## 0.0.4
+
+### Patch Changes
+
+- cbd533a: switch back to pnpm
+
 ## 0.0.3
 
 ### Patch Changes
