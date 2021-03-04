@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/admmasters/eslint-config-pioneers#readme",
   "scripts": {
+    "changeset": "changeset",
     "ci:version": "changeset version",
     "ci:release": "changeset publish"
   },
