@@ -10,7 +10,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
-    "prettier/@typescript-eslint",
   ],
   globals: {
     Atomics: "readonly",
@@ -27,7 +26,6 @@ module.exports = {
   plugins: [
     "@typescript-eslint",
     "jsx-a11y",
-    "no-null",
     "prettier",
     "react",
     "react-hooks",
@@ -63,9 +61,6 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-
-    /* Don't allow nulls and enforce using undefined instead */
-    "no-null/no-null": "error"
   },
   settings: {
     react: {
