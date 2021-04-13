@@ -1,5 +1,11 @@
 # @admmasters/eslint-config-pioneers
 
+## 0.3.0
+
+### Minor Changes
+
+- dc9ae71: bump peer dependencies and add meta
+
 ## 0.2.0
 
 ### Minor Changes
